@@ -84,7 +84,7 @@ Matlab | 暂无 | 暂无 | 暂无
 <h2 id="area_study">领域学习</h2>
 
 - [器件]
-- [模拟电路](http://www.leeic007.com/ee/electrical-engineer/)
+- [模拟电路](http://www.leeic007.com/ee/analog-circuits/)
 - [数字电路]
 - [信号处理]
 - [通信与网络]
