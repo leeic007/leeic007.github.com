@@ -1,0 +1,53 @@
+/**
+ * Search
+ */
+
+#search-container {
+  margin-left: 15px;
+  width: 100%;
+
+  @include media-query($on-palm) {
+	width: 100%;
+  }
+}
+
+#search-input {
+	font-family: Imprima;
+	font-weight: bold;
+	height: 30px;
+	width: 97%;
+	padding: 0px 0px 0px 5px;
+	color: #B03A3A;
+	background-color: whitesmoke;
+	border-radius: 0px 0px 20px 5px;
+	border-top-style: hidden;
+	border-left-style: hidden;
+	border-bottom-style: hidden;
+
+	-webkit-transition: box-shadow linear 0.25s;
+	transition: box-shadow linear 0.25s;
+
+	@include media-query($on-palm) {
+		width: 96%;
+	}
+}
+
+#search-input:focus {
+	outline: 0;
+	box-shadow: 0 0 10px black;
+}
+
+#results-container {
+  list-style-type: none;
+  margin-top: 0px;
+  font-family: Imprima;
+  font-size: 20px;
+  width: 95%;
+  margin-left: 0px;	
+  background-color: whitesmoke;
+}
+
+.search-results-table th {
+  font-weight: normal;
+  padding: 3px;
+}  

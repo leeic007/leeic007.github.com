@@ -1,0 +1,19 @@
+<header>
+
+.. bunch of stuff for the header of the blog
+..
+Then the search Javascript code needed
+
+<script type="text/javascript">
+SimpleJekyllSearch({
+	searchInput: document.getElementById('search-input'),
+	resultsContainer: document.getElementById('results-container'),
+	json: '/search.json',
+	searchResultTemplate: '<table class="search-results-table"><tr><th><img src="{image}" width="40" height="40"></img></th><th><li><a href="{url}" title="{desc}">{title}</a></li></th></tr></table>',
+	noResultsText: 'No results found, please try again',
+	limit: 10,
+	fuzzy: false,
+})
+</script>	
+
+</header>  
