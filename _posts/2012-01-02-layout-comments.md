@@ -1,12 +1,10 @@
 ---
-title: "Layout: Comments Enabled"
+title: "评论功能展示"
 comments: true
 categories:
-  - Layout
-  - Uncategorized
+  - Blog
 tags:
-  - comments
-  - layout
+  - Blog
 ---
 
-This post should display comments.
+这里将展示评论功能，待写~

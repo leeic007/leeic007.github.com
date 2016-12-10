@@ -1,12 +1,10 @@
 ---
-title: "Layout: Social Sharing Links Enabled"
+title: "社交分享"
 share: true
 categories:
-  - Layout
-  - Uncategorized
+  - Blog
 tags:
-  - social
-  - layout
+  - Blog
 ---
 
-This post should display social sharing links.
+这里将展示社交分享功能，待写。。。

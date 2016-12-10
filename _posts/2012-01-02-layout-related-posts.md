@@ -1,12 +1,10 @@
 ---
-title: "Layout: Related Posts Enabled"
+title: "相关文章展示"
 related: true
 categories:
-  - Layout
-  - Uncategorized
+  - Blog
 tags:
-  - related posts
-  - layout
+  - Blog
 ---
 
-This post has related posts enabled.
+这里将说明相关文章展示的功能，待写。。。
