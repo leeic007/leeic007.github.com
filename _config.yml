@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "zh-CHS"
-title                    : "leeic007の部屋"
+title                    : "电子工程系统学习方案"
 title_separator          : "-"
-name                     : "leeic007"
+name                     : "L'sj"
 description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
