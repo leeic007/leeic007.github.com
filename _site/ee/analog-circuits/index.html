@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>模拟电路（Analog_Circuits） - leeic007の部屋</title>
+
+
+
+
+<meta name="description" content="主要内容：  前言  课程列表  推荐学习路线          电路基础      软件快速上手      电路模块设计      系统设计入门        推荐书籍列表  实用小技能get  几个设计实例  专项领域学习">
+
+
+
+
+<meta property="og:locale" content="zh_CHS">
+<meta property="og:site_name" content="leeic007の部屋">
+<meta property="og:title" content="模拟电路（Analog_Circuits）">
+
+
+  <link rel="canonical" href="http://localhost:4000/ee/analog-circuits/">
+  <meta property="og:url" content="http://localhost:4000/ee/analog-circuits/">
+
+
+
+  <meta property="og:description" content="主要内容：  前言  课程列表  推荐学习路线          电路基础      软件快速上手      电路模块设计      系统设计入门        推荐书籍列表  实用小技能get  几个设计实例  专项领域学习">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2016-12-08T00:00:00+08:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "leeic007",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="leeic007の部屋 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+         
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">leeic007の部屋</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">关于</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tags/">分类</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">时间轴</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/search/">搜索</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://localhost:4000/assets/images/bio-photo.jpg" class="author__avatar" alt="leeic007" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">leeic007</h3>
+    
+      <p class="author__bio" itemprop="description">
+        P.hD in EE @ Xidian Univ.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> 
+          <span itemprop="name"> 古都·西安 </span>
+        </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://twitter.com//leeic0071" itemprop="sameAs">
+          <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> 
+          Twitter
+        </a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com//leeic007" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> 
+          Github
+        </a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://www.weibo.com//leeic007" itemprop="sameAs">
+          <i class="fa fa-fw fa-weibo" aria-hidden="true"></i> 
+          Weibo
+        </a></li>
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="模拟电路（Analog_Circuits）">
+    <meta itemprop="description" content="主要内容：  前言  课程列表  推荐学习路线          电路基础      软件快速上手      电路模块设计      系统设计入门        推荐书籍列表  实用小技能get  几个设计实例  专项领域学习">
+    <meta itemprop="datePublished" content="December 08, 2016">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">模拟电路（Analog_Circuits）
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  少于 1 分钟阅读时间
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="主要内容">主要内容：</h2>
+<ul>
+  <li><a href="#preparation">前言</a></li>
+  <li><a href="#curriculum">课程列表</a></li>
+  <li><a href="#learning_route">推荐学习路线</a>
+    <ul>
+      <li><a href="#circuit_basis">电路基础</a></li>
+      <li><a href="#software_guidelines">软件快速上手</a></li>
+      <li><a href="#module_design">电路模块设计</a></li>
+      <li><a href="#system_begin">系统设计入门</a></li>
+    </ul>
+  </li>
+  <li><a href="#booklists">推荐书籍列表</a></li>
+  <li><a href="#practical_skill">实用小技能get</a></li>
+  <li><a href="#design_examples">几个设计实例</a></li>
+  <li><a href="#special_field">专项领域学习</a></li>
+</ul>
+
+<hr />
+
+<h2 id="preparation">前言</h2>
+
+<p>加州伯克利分校在集成电路领域算得上是顶尖学校了，下面【课程列表】列出的课程是伯克利分校本科生毕业所要完成的，其中课程的资源（如视频、lecture等）不一定用他们所要求的（主要是版权原因，有些资源并没有公开），这里会列出公认比较好的资源供大家参考学习。电路设计是偏工程的领域，直觉很重要，所以学习中应该训练并加强分析问题的过程，培养一种感觉，而非只在乎结果。建议以定性和定量两种方式完成推荐书籍的部分练习题。</p>
+
+<hr />
+
+<h2 id="curriculum">课程列表</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">课程</th>
+      <th style="text-align: center">机构</th>
+      <th style="text-align: center">资源</th>
+      <th style="text-align: center">其他参考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">微电子器件</td>
+      <td style="text-align: center">國立臺灣師範大學</td>
+      <td style="text-align: center"><a href="http://ocw.lib.ntnu.edu.tw/course/view.php?id=258">半導體元件物理</a>–&gt;<a href="http://pan.baidu.com/s/1hrXkcjM">网盘</a></td>
+      <td style="text-align: center">[PDF]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">微电子电路</td>
+      <td style="text-align: center">Oxford University</td>
+      <td style="text-align: center"><a href="https://www.amazon.com/Microelectronic-Circuits-Electrical-Computer-Engineering/dp/0199339139/ref=sr_1_1?ie=UTF8&amp;qid=1480839982&amp;sr=8-1&amp;keywords=Microelectronic+Circuits&amp;refinements=p_72%3A2661618011">Microelectronic Circuits, Sedra/Smith.</a>–&gt;<a href="http://pan.baidu.com/s/1hr93K24">网盘</a></td>
+      <td style="text-align: center"><a href="http://list.youku.com/albumlist/show/id_22983227.html?sf=10101&amp;spm=a2h0k.8191403.0.0">视频</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Analog_IC(1)</td>
+      <td style="text-align: center">McGraw Hill</td>
+      <td style="text-align: center"><a href="https://www.amazon.com/Design-Analog-CMOS-Integrated-Circuits/dp/0072524936/ref=pd_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=ZDTE8Y6A5XRQR00J03XX">Design of Analog CMOS Integrated Circuits,2rd</a>[书]–&gt;<a href="http://pan.baidu.com/s/1boYGnnh">网盘</a></td>
+      <td style="text-align: center"><a href="http://pan.baidu.com/s/1i4VgzFB">其他</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Analog_IC(2)</td>
+      <td style="text-align: center">Springer</td>
+      <td style="text-align: center"><a href="https://www.amazon.com/Essentials-Springer-International-Engineering-Computer/dp/0387257462/ref=sr_1_1?ie=UTF8&amp;qid=1480844881&amp;sr=8-1&amp;keywords=ANALOG+DESIGN+ESSENTIALS&amp;refinements=p_72%3A2661618011">Analog Design Essentials, Sansen</a>–&gt;<a href="http://pan.baidu.com/s/1eSJX0NC">高清PPT、PDF</a></td>
+      <td style="text-align: center">其他</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">RFIC基础</td>
+      <td style="text-align: center">Springer</td>
+      <td style="text-align: center"><a href="https://www.amazon.com/Design-Radio-Frequency-Integrated-Circuits-Second/dp/0521835399/ref=sr_1_1?ie=UTF8&amp;qid=1480856253&amp;sr=8-1&amp;keywords=The+design+of+CMOS+radio-frequency+integrated+circuits&amp;refinements=p_72%3A2661618011">The design of CMOS radio-frequency integrated circuits</a></td>
+      <td style="text-align: center">其他</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">电力电子基础</td>
+      <td style="text-align: center">Addison-Wesley</td>
+      <td style="text-align: center"><a href="https://www.amazon.com/Principles-Electronics-Verghese-Schlecht-Kassakian/dp/B003XVKP7G/ref=sr_1_1?ie=UTF8&amp;qid=1480851723&amp;sr=8-1&amp;keywords=Principles+of+Power+Electronics">Principles of Power Electronics</a></td>
+      <td style="text-align: center">参考</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="learning_route">推荐学习路线</h2>
+<h3 id="circuit_basis">电路基础</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">课程</th>
+      <th style="text-align: center">机构</th>
+      <th style="text-align: center">资源</th>
+      <th style="text-align: center">其他参考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">待补充</td>
+      <td style="text-align: center">待补充</td>
+      <td style="text-align: center">待补充</td>
+      <td style="text-align: center">待补充</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="software_guidelines">软件快速上手</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">课程</th>
+      <th style="text-align: center">机构</th>
+      <th style="text-align: center">资源</th>
+      <th style="text-align: center">其他参考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Hspice</td>
+      <td style="text-align: center">暂无</td>
+      <td style="text-align: center">暂无</td>
+      <td style="text-align: center">暂无</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Cadence_IC(IC)</td>
+      <td style="text-align: center">浙江大学</td>
+      <td style="text-align: center"><a href="https://item.jd.com/10868759839.html">模拟集成电路设计与仿真, 何乐年</a></td>
+      <td style="text-align: center">其他</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Cadence_SPB(PSpice &amp; PCB)</td>
+      <td style="text-align: center">www.sig007.com</td>
+      <td style="text-align: center"><a href="http://pan.baidu.com/s/1hrKZfne">于博士Cadence视频教程60集全套</a></td>
+      <td style="text-align: center">其他</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Altium Designer(PCB)</td>
+      <td style="text-align: center">暂无</td>
+      <td style="text-align: center">暂无</td>
+      <td style="text-align: center">其他</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ADS</td>
+      <td style="text-align: center">Keysight</td>
+      <td style="text-align: center">视频</td>
+      <td style="text-align: center">书籍</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="module_design">电路模块设计</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">课程</th>
+      <th style="text-align: center">机构</th>
+      <th style="text-align: center">资源</th>
+      <th style="text-align: center">其他参考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">待补充</td>
+      <td style="text-align: center">待补充</td>
+      <td style="text-align: center">待补充</td>
+      <td style="text-align: center">待补充</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="system_begin">系统设计入门</h3>
+<ul>
+  <li>语言描述类</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">课程</th>
+      <th style="text-align: center">机构</th>
+      <th style="text-align: center">资源</th>
+      <th style="text-align: center">其他参考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Matlab</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Verilog-AMS</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>利用ModelWriter</p>
+
+<ul>
+  <li>系统设计类</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">课程</th>
+      <th style="text-align: center">机构</th>
+      <th style="text-align: center">资源</th>
+      <th style="text-align: center">其他参考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">暂空</td>
+      <td style="text-align: center">暂空</td>
+      <td style="text-align: center">暂空</td>
+      <td style="text-align: center">暂空</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="booklists">推荐书籍列表</h2>
+<p>暂空</p>
+
+<hr />
+
+<h2 id="practical_skill">实用小技能get</h2>
+<hr />
+<ul>
+  <li>linux基本指令：暂无</li>
+  <li>vim快速上手：<a href="http://coolshell.cn/articles/5426.html">Vim练级攻略 </a></li>
+  <li>python（面向数据处理）：<a href="https://www.coursera.org/learn/python/home/welcome">视频</a>–&gt;<a href="http://www.pythonlearn.com/book.php">配套书籍(Py2/Py3均有)</a></li>
+</ul>
+
+<h2 id="design_examples">几个设计实例</h2>
+<p>暂空</p>
+
+<hr />
+
+<h2 id="special_field">专项领域学习</h2>
+<ul>
+  <li><a href="#RFIC">射频集成电路（RFIC）</a></li>
+  <li><a href="#PM">电源管理（PM）</a></li>
+  <li><a href="#Mixed-Signal_IC">混合集成电路（Mixed-Signal IC）</a></li>
+  <li><a href="#System_Modeling">系统与建模（System &amp; Modeling）</a></li>
+  <li><a href="#Verification_Testing_Measurement">验证、测试与测量（Verification、Testing &amp; Measurement）</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#ee" class="page__taxonomy-item" rel="tag">EE</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#ee" class="page__taxonomy-item" rel="tag">EE</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-12-08T00:00:00+08:00">December 08, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=模拟电路（Analog_Circuits） http://localhost:4000/ee/analog-circuits/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/ee/analog-circuits/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http://localhost:4000/ee/analog-circuits/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/ee/analog-circuits/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="#" class="social-share-icon icon-weibo"></a>
+  
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/ee/electrical-engineer/" class="pagination--pager" title="电子工程（Electrical Engineering）
+">上一页</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">下一页</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+    
+      <li><a href="http://github.com//leeic007"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2016 leeic007. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

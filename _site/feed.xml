@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-12-10T15:11:22+08:00</updated><id>http://localhost:4000//</id><title type="html">leeic007の部屋</title><subtitle></subtitle><author><name>leeic007</name></author><entry><title type="html">模拟电路（Analog_Circuits）</title><link href="http://localhost:4000/ee/analog-circuits/" rel="alternate" type="text/html" title="模拟电路（Analog_Circuits）" /><published>2016-12-08T00:00:00+08:00</published><updated>2016-12-08T00:00:00+08:00</updated><id>http://localhost:4000/ee/analog-circuits</id><content type="html" xml:base="http://localhost:4000/ee/analog-circuits/">&lt;h2 id=&quot;主要内容&quot;&gt;主要内容：&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#preparation&quot;&gt;前言&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#curriculum&quot;&gt;课程列表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#learning_route&quot;&gt;推荐学习路线&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#circuit_basis&quot;&gt;电路基础&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#software_guidelines&quot;&gt;软件快速上手&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#module_design&quot;&gt;电路模块设计&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#system_begin&quot;&gt;系统设计入门&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#booklists&quot;&gt;推荐书籍列表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#practical_skill&quot;&gt;实用小技能get&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#design_examples&quot;&gt;几个设计实例&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#special_field&quot;&gt;专项领域学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;preparation&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;加州伯克利分校在集成电路领域算得上是顶尖学校了，下面【课程列表】列出的课程是伯克利分校本科生毕业所要完成的，其中课程的资源（如视频、lecture等）不一定用他们所要求的（主要是版权原因，有些资源并没有公开），这里会列出公认比较好的资源供大家参考学习。电路设计是偏工程的领域，直觉很重要，所以学习中应该训练并加强分析问题的过程，培养一种感觉，而非只在乎结果。建议以定性和定量两种方式完成推荐书籍的部分练习题。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;curriculum&quot;&gt;课程列表&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;其他参考&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;微电子器件&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;國立臺灣師範大學&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://ocw.lib.ntnu.edu.tw/course/view.php?id=258&quot;&gt;半導體元件物理&lt;/a&gt;–&amp;gt;&lt;a href=&quot;http://pan.baidu.com/s/1hrXkcjM&quot;&gt;网盘&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[PDF]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;微电子电路&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Oxford University&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Microelectronic-Circuits-Electrical-Computer-Engineering/dp/0199339139/ref=sr_1_1?ie=UTF8&amp;amp;qid=1480839982&amp;amp;sr=8-1&amp;amp;keywords=Microelectronic+Circuits&amp;amp;refinements=p_72%3A2661618011&quot;&gt;Microelectronic Circuits, Sedra/Smith.&lt;/a&gt;–&amp;gt;&lt;a href=&quot;http://pan.baidu.com/s/1hr93K24&quot;&gt;网盘&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://list.youku.com/albumlist/show/id_22983227.html?sf=10101&amp;amp;spm=a2h0k.8191403.0.0&quot;&gt;视频&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Analog_IC(1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;McGraw Hill&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Design-Analog-CMOS-Integrated-Circuits/dp/0072524936/ref=pd_sbs_14_t_0?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=ZDTE8Y6A5XRQR00J03XX&quot;&gt;Design of Analog CMOS Integrated Circuits,2rd&lt;/a&gt;[书]–&amp;gt;&lt;a href=&quot;http://pan.baidu.com/s/1boYGnnh&quot;&gt;网盘&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://pan.baidu.com/s/1i4VgzFB&quot;&gt;其他&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Analog_IC(2)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Springer&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Essentials-Springer-International-Engineering-Computer/dp/0387257462/ref=sr_1_1?ie=UTF8&amp;amp;qid=1480844881&amp;amp;sr=8-1&amp;amp;keywords=ANALOG+DESIGN+ESSENTIALS&amp;amp;refinements=p_72%3A2661618011&quot;&gt;Analog Design Essentials, Sansen&lt;/a&gt;–&amp;gt;&lt;a href=&quot;http://pan.baidu.com/s/1eSJX0NC&quot;&gt;高清PPT、PDF&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;其他&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;RFIC基础&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Springer&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Design-Radio-Frequency-Integrated-Circuits-Second/dp/0521835399/ref=sr_1_1?ie=UTF8&amp;amp;qid=1480856253&amp;amp;sr=8-1&amp;amp;keywords=The+design+of+CMOS+radio-frequency+integrated+circuits&amp;amp;refinements=p_72%3A2661618011&quot;&gt;The design of CMOS radio-frequency integrated circuits&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;其他&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;电力电子基础&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Addison-Wesley&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Principles-Electronics-Verghese-Schlecht-Kassakian/dp/B003XVKP7G/ref=sr_1_1?ie=UTF8&amp;amp;qid=1480851723&amp;amp;sr=8-1&amp;amp;keywords=Principles+of+Power+Electronics&quot;&gt;Principles of Power Electronics&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;参考&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;learning_route&quot;&gt;推荐学习路线&lt;/h2&gt;
+&lt;h3 id=&quot;circuit_basis&quot;&gt;电路基础&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;其他参考&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;待补充&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;待补充&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;待补充&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;待补充&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;software_guidelines&quot;&gt;软件快速上手&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;其他参考&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hspice&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂无&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂无&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cadence_IC(IC)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;浙江大学&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://item.jd.com/10868759839.html&quot;&gt;模拟集成电路设计与仿真, 何乐年&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;其他&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cadence_SPB(PSpice &amp;amp; PCB)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;www.sig007.com&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://pan.baidu.com/s/1hrKZfne&quot;&gt;于博士Cadence视频教程60集全套&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;其他&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Altium Designer(PCB)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂无&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂无&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;其他&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ADS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Keysight&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;视频&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;书籍&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;module_design&quot;&gt;电路模块设计&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;其他参考&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;待补充&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;待补充&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;待补充&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;待补充&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;system_begin&quot;&gt;系统设计入门&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;语言描述类&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;其他参考&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Matlab&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Verilog-AMS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;利用ModelWriter&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;系统设计类&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;其他参考&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;暂空&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂空&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂空&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂空&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;booklists&quot;&gt;推荐书籍列表&lt;/h2&gt;
+&lt;p&gt;暂空&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;practical_skill&quot;&gt;实用小技能get&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;linux基本指令：暂无&lt;/li&gt;
+  &lt;li&gt;vim快速上手：&lt;a href=&quot;http://coolshell.cn/articles/5426.html&quot;&gt;Vim练级攻略 &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;python（面向数据处理）：&lt;a href=&quot;https://www.coursera.org/learn/python/home/welcome&quot;&gt;视频&lt;/a&gt;–&amp;gt;&lt;a href=&quot;http://www.pythonlearn.com/book.php&quot;&gt;配套书籍(Py2/Py3均有)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;design_examples&quot;&gt;几个设计实例&lt;/h2&gt;
+&lt;p&gt;暂空&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;special_field&quot;&gt;专项领域学习&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#RFIC&quot;&gt;射频集成电路（RFIC）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#PM&quot;&gt;电源管理（PM）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Mixed-Signal_IC&quot;&gt;混合集成电路（Mixed-Signal IC）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#System_Modeling&quot;&gt;系统与建模（System &amp;amp; Modeling）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Verification_Testing_Measurement&quot;&gt;验证、测试与测量（Verification、Testing &amp;amp; Measurement）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>leeic007</name></author><category term="EE" /><summary type="html">主要内容：
+
+  前言
+  课程列表
+  推荐学习路线
+    
+      电路基础
+      软件快速上手
+      电路模块设计
+      系统设计入门
+    
+  
+  推荐书籍列表
+  实用小技能get
+  几个设计实例
+  专项领域学习</summary></entry><entry><title type="html">电子工程（Electrical Engineering）</title><link href="http://localhost:4000/ee/electrical-engineer/" rel="alternate" type="text/html" title="电子工程（Electrical Engineering）" /><published>2016-12-05T00:00:00+08:00</published><updated>2016-12-05T00:00:00+08:00</updated><id>http://localhost:4000/ee/electrical-engineer</id><content type="html" xml:base="http://localhost:4000/ee/electrical-engineer/">&lt;h2 id=&quot;主要内容&quot;&gt;主要内容&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#curriculum&quot;&gt;课程列表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#EE_learning_routine&quot;&gt;电子工程专业学习路线&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#what_EE&quot;&gt;什么是电子工程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#EE_matphy_basic&quot;&gt;电子工程数理基础&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#EE_phase&quot;&gt;电子工程核心基础课程学习&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#recommended_class&quot;&gt;其他推荐课程&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tasks&quot;&gt;任务&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#area_study&quot;&gt;领域学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;curriculum&quot;&gt;课程列表&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;参考资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;其他资料&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;单变量微积分&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/exec/obidos/ASIN/0070576424/ref=nosim/mitopencourse-20&quot;&gt;Calculus with Analytic Geometry&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/&quot;&gt;教学视频&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;普通物理&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;国外优秀教材精选&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://item.jd.com/10058982.html&quot;&gt;哈里德大学物理学（上、下册）&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;暂无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;C语言程序设计&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;thenewboston&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/dp/0131103628/?tag=stackoverfl08-20&quot;&gt;The C Programming Language&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=2NWeucMKrLI&amp;amp;index=1&amp;amp;list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq&quot;&gt;教学视频&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;电路基础&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/circuits.html&quot;&gt;麻省理工开放课程:电路与电子学&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://item.jd.com/11508886.html&quot;&gt;教材推荐&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;概率论&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;國立臺灣大學&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;機率與統計—&amp;gt;&lt;a href=&quot;http://mooc.guokr.com/course/461/%E6%A9%9F%E7%8E%87/&quot;&gt;MOOC&lt;/a&gt; &amp;amp;&amp;amp; &lt;a href=&quot;https://www.youtube.com/watch?v=GwSEguqJj6U&amp;amp;index=1&amp;amp;list=PLtvno3VRDR_jMAJcNY1n4pnP5kXtPOmVk&quot;&gt;YouTube&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://item.jd.com/10160450.html&quot;&gt;教材推荐&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;复变函数&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;图灵数学&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://item.jd.com/10063608.html&quot;&gt;复分析：可视化方法&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;暂无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;线性代数&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/daishu.html&quot;&gt;麻省理工公开课：线性代数导论&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;http://math.mit.edu/~gs/linearalgebra/&quot;&gt;配套教材&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;微分方程&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/equations.html&quot;&gt;麻省理工公开课：微分方程&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/index.htm&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;信号与系统&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/signals.html&quot;&gt;麻省理工公开课：信号与系统 by 奥本海姆&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1480857180&amp;amp;sr=1-1&amp;amp;keywords=signals+and+systems&amp;amp;refinements=p_lbr_one_browse-bin%3AAlan+V.+Oppenheim%2Cp_72%3A1250222011&quot;&gt;书籍&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;EE_learning_routine&quot;&gt;电子工程专业学习路线&lt;/h2&gt;
+&lt;h3 id=&quot;what_EE&quot;&gt;什么是电子工程&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;维基百科：&lt;a href=&quot;https://en.wikipedia.org/wiki/Electrical_engineering&quot;&gt;Electrical Engineering&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;MIT系列视频：&lt;a href=&quot;https://www.youtube.com/watch?v=3S4cNfl0YF0&amp;amp;list=PLokv8kF5fN46vRTd1KAZuo1NEdtrA7ri6&quot;&gt;Introduction to Electrical Engineering and Computer Science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;EE_matphy_basic&quot;&gt;电子工程数理基础&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;参考资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;其他资料&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;单变量微积分&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/exec/obidos/ASIN/0070576424/ref=nosim/mitopencourse-20&quot;&gt;Calculus with Analytic Geometry&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/&quot;&gt;教学视频&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;普通物理&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;国外优秀教材精选&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://item.jd.com/10058982.html&quot;&gt;哈里德大学物理学（上、下册）&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;暂无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;概率论&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;國立臺灣大學&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;機率與統計—&amp;gt;&lt;a href=&quot;http://mooc.guokr.com/course/461/%E6%A9%9F%E7%8E%87/&quot;&gt;MOOC&lt;/a&gt; &amp;amp;&amp;amp; &lt;a href=&quot;https://www.youtube.com/watch?v=GwSEguqJj6U&amp;amp;index=1&amp;amp;list=PLtvno3VRDR_jMAJcNY1n4pnP5kXtPOmVk&quot;&gt;YouTube&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://item.jd.com/10160450.html&quot;&gt;教材推荐&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;线性代数&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/daishu.html&quot;&gt;麻省理工公开课：线性代数导论&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;http://math.mit.edu/~gs/linearalgebra/&quot;&gt;配套教材&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;微分方程&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/equations.html&quot;&gt;麻省理工公开课：微分方程&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/index.htm&quot;&gt;链接&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;EE_phase&quot;&gt;电子工程核心基础课程学习&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;参考资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;其他资料&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;C语言程序设计&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;thenewboston&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com/dp/0131103628/?tag=stackoverfl08-20&quot;&gt;The C Programming Language&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=2NWeucMKrLI&amp;amp;index=1&amp;amp;list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq&quot;&gt;教学视频&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;电路基础&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/circuits.html&quot;&gt;麻省理工开放课程:电路与电子学&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://item.jd.com/11508886.html&quot;&gt;教材推荐&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;信号与系统&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MIT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://open.163.com/special/opencourse/signals.html&quot;&gt;麻省理工公开课：信号与系统 by 奥本海姆&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1480857180&amp;amp;sr=1-1&amp;amp;keywords=signals+and+systems&amp;amp;refinements=p_lbr_one_browse-bin%3AAlan+V.+Oppenheim%2Cp_72%3A1250222011&quot;&gt;书籍&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;recommended_class&quot;&gt;其他推荐课程&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;课程&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;机构&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;参考资源&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;其他资料&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Matlab&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂无&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;暂无&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;暂无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;数学物理方法&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;科学出版社&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://item.jd.com/1257208980.html&quot;&gt;数学物理方法&lt;/a&gt;. [德] 顾樵&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;暂无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;数值分析&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;华章数学丛书&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://item.jd.com/11586820.html&quot;&gt;数值分析&lt;/a&gt;. [美] Timothy Sauer&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;暂无&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;tasks&quot;&gt;任务&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完成微积分、线性代数、概率论部分课后题&lt;/li&gt;
+  &lt;li&gt;Matlab实现《数值分析》大部分例题和课后题&lt;/li&gt;
+  &lt;li&gt;完成C语言教材中的练习题&lt;/li&gt;
+  &lt;li&gt;其他&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;area_study&quot;&gt;领域学习&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[器件]&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.leeic007.com/ee/electrical-engineer/&quot;&gt;模拟电路&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[数字电路]&lt;/li&gt;
+  &lt;li&gt;[信号处理]&lt;/li&gt;
+  &lt;li&gt;[通信与网络]&lt;/li&gt;
+  &lt;li&gt;[机器人与控制]&lt;/li&gt;
+  &lt;li&gt;[实验与项目]&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>leeic007</name></author><category term="EE" /><summary type="html">主要内容
+
+  课程列表
+  电子工程专业学习路线
+    
+      什么是电子工程
+      电子工程数理基础
+      电子工程核心基础课程学习
+      其他推荐课程
+    
+  
+  任务
+  领域学习</summary></entry><entry><title type="html">Jekyll+Github Pages搭建简易博客系列（一）</title><link href="http://localhost:4000/blog/welcome-to-jekyll/" rel="alternate" type="text/html" title="Jekyll+Github Pages搭建简易博客系列（一）" /><published>2016-12-04T00:00:00+08:00</published><updated>2016-12-04T00:00:00+08:00</updated><id>http://localhost:4000/blog/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/welcome-to-jekyll/">&lt;h1 id=&quot;本地建立jekyll项目&quot;&gt;—&amp;gt;本地建立Jekyll项目&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;i-首先感谢iulia总结了这个过程并整理成视频能上youtube的可以参考一下&quot;&gt;I. 首先感谢Iulia总结了这个过程并整理成视频，能上YouTube的可以参考一下：&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/t9qDNe7xk4c&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;ii-不能上youtube的可以按照她本人总结文字步骤进行&quot;&gt;II. 不能上YouTube的可以按照她本人总结文字步骤进行：&lt;/h2&gt;
+
+&lt;h3 id=&quot;step_0-使用的工具&quot;&gt;Step_0 使用的工具：&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Win 10 企业版 x64&lt;/li&gt;
+  &lt;li&gt;Notepad++&lt;/li&gt;
+  &lt;li&gt;Git Bash&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;step_1-准备的软件&quot;&gt;Step_1 准备的软件：&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ruby 2.0.0及以上版本&lt;/li&gt;
+  &lt;li&gt;DevKit&lt;/li&gt;
+  &lt;li&gt;Bundler&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;step_2-建立过程&quot;&gt;Step_2 建立过程：&lt;/h3&gt;
+
+&lt;h4 id=&quot;1安装ruby&quot;&gt;1）安装Ruby&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;下载地址&lt;/a&gt;，下载符合系统的版本；&lt;/li&gt;
+  &lt;li&gt;安装时，三个选项全选中；&lt;/li&gt;
+  &lt;li&gt;完成后在“此电脑-属性-高级-环境变量”查看是否添加Ruby的环境变量，在git bash中输入“ruby –version”查看版本。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2安装devkit&quot;&gt;2）安装DevKit&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;下载地址&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;同上&lt;/a&gt;，注意选择和Ruby版本对应的DevKit；&lt;/li&gt;
+  &lt;li&gt;解压到目录下，我时放在安装的Ruby目录下，在C盘；&lt;/li&gt;
+  &lt;li&gt;git bash下cd到Devkit的解压目录，然后执行以下三个命令：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby dk.rb init
+ruby dk.rb review
+ruby dk.rb install
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3建立本地jekyll项目&quot;&gt;3）建立本地Jekyll项目&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;从&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;这里&lt;/a&gt;下载到本地并解压，cd进入到该目录；&lt;/li&gt;
+  &lt;li&gt;安装bundler：&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install bundler&lt;/code&gt;，遇到防火墙提示请同意；&lt;/li&gt;
+  &lt;li&gt;安装bundler的依赖：&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;建立本地Jekyll站点：&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll build&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;执行本地站点：&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;，如果执行有问题，用命令&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -ano&lt;/code&gt;检查4000端口是否被占用，如果被占用，则记住PID号，在“任务管理器-服务”中停掉&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;如果顺利的话，在浏览器用&lt;a href=&quot;http://localhost:4000/&quot;&gt;http://localhost:4000/&lt;/a&gt;即可本地访问主页。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;step_3-修改本地jekyll站点&quot;&gt;Step_3 修改本地Jekyll站点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文章在_posts添加和修改；&lt;/li&gt;
+  &lt;li&gt;每次修改后都要重新执行一下&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;具体博客布局的修改，功能的添加可以参考&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;这篇文章&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>leeic007</name></author><category term="Blog" /><summary type="html">—&amp;gt;本地建立Jekyll项目</summary></entry><entry><title type="html">社交分享</title><link href="http://localhost:4000/blog/layout-sharing/" rel="alternate" type="text/html" title="社交分享" /><published>2012-01-02T00:00:00+08:00</published><updated>2012-01-02T00:00:00+08:00</updated><id>http://localhost:4000/blog/layout-sharing</id><content type="html" xml:base="http://localhost:4000/blog/layout-sharing/">&lt;p&gt;这里将展示社交分享功能，待写。。。&lt;/p&gt;</content><author><name>leeic007</name></author><category term="Blog" /><summary type="html">这里将展示社交分享功能，待写。。。</summary></entry><entry><title type="html">相关文章展示</title><link href="http://localhost:4000/blog/layout-related-posts/" rel="alternate" type="text/html" title="相关文章展示" /><published>2012-01-02T00:00:00+08:00</published><updated>2012-01-02T00:00:00+08:00</updated><id>http://localhost:4000/blog/layout-related-posts</id><content type="html" xml:base="http://localhost:4000/blog/layout-related-posts/">&lt;p&gt;这里将说明相关文章展示的功能，待写。。。&lt;/p&gt;</content><author><name>leeic007</name></author><category term="Blog" /><summary type="html">这里将说明相关文章展示的功能，待写。。。</summary></entry><entry><title type="html">评论功能展示</title><link href="http://localhost:4000/blog/layout-comments/" rel="alternate" type="text/html" title="评论功能展示" /><published>2012-01-02T00:00:00+08:00</published><updated>2012-01-02T00:00:00+08:00</updated><id>http://localhost:4000/blog/layout-comments</id><content type="html" xml:base="http://localhost:4000/blog/layout-comments/">&lt;p&gt;这里将展示评论功能，待写~&lt;/p&gt;</content><author><name>leeic007</name></author><category term="Blog" /><summary type="html">这里将展示评论功能，待写~</summary></entry><entry><title type="html">YouTube视频嵌入</title><link href="http://localhost:4000/blog/post-video-youtube/" rel="alternate" type="text/html" title="YouTube视频嵌入" /><published>2010-06-02T00:00:00+08:00</published><updated>2010-06-02T00:00:00+08:00</updated><id>http://localhost:4000/blog/post-video-youtube</id><content type="html" xml:base="http://localhost:4000/blog/post-video-youtube/">&lt;h3 id=&quot;step_1-打开youtube视频&quot;&gt;Step_1 打开YouTube视频；&lt;/h3&gt;
+&lt;h3 id=&quot;step_2-点击视频下方的分享-嵌入会出现html代码&quot;&gt;Step_2 点击视频下方的“分享-嵌入”，会出现Html代码；&lt;/h3&gt;
+&lt;h3 id=&quot;step_3-复制-粘贴到文中你想插入的地方&quot;&gt;Step_3 复制-粘贴到文中你想插入的地方。&lt;/h3&gt;
+
+&lt;h3 id=&quot;下面是个示例&quot;&gt;下面是个示例：&lt;/h3&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/l2Of1-d5E5o?controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>leeic007</name></author><category term="Blog" /><summary type="html">Step_1 打开YouTube视频；
+Step_2 点击视频下方的“分享-嵌入”，会出现Html代码；
+Step_3 复制-粘贴到文中你想插入的地方。</summary></entry><entry><title type="html">链接功能</title><link href="http://localhost:4000/blog/post-link/" rel="alternate" type="text/html" title="链接功能" /><published>2010-03-07T00:00:00+08:00</published><updated>2010-03-07T00:00:00+08:00</updated><id>http://localhost:4000/blog/post-link</id><content type="html" xml:base="http://localhost:4000/blog/post-link/">&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code class=&quot;highlighter-rouge&quot;&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;And this is how a quote looks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Some &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt; can also be shown.&lt;/p&gt;</content><author><name>leeic007</name></author><category term="Blog" /><summary type="html">This theme supports link posts, made famous by John Gruber. To use, just add link: http://url-you-want-linked to the post’s YAML front matter and you’re done.</summary></entry><entry><title type="html">聊天功能</title><link href="http://localhost:4000/blog/post-chat/" rel="alternate" type="text/html" title="聊天功能" /><published>2010-01-08T00:00:00+08:00</published><updated>2010-01-08T00:00:00+08:00</updated><id>http://localhost:4000/blog/post-chat</id><content type="html" xml:base="http://localhost:4000/blog/post-chat/">&lt;p&gt;Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.&lt;/p&gt;
+
+&lt;p&gt;Costello: Funny names?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Nicknames, nicknames. Now, on the St. Louis team we have Who’s on first, What’s on second, I Don’t Know is on third–&lt;/p&gt;
+
+&lt;p&gt;Costello: That’s what I want to find out. I want you to tell me the names of the fellows on the St. Louis team.&lt;/p&gt;
+
+&lt;p&gt;Abbott: I’m telling you. Who’s on first, What’s on second, I Don’t Know is on third–&lt;/p&gt;
+
+&lt;p&gt;Costello: You know the fellows’ names?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Yes.&lt;/p&gt;
+
+&lt;p&gt;Costello: Well, then who’s playing first?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Yes.&lt;/p&gt;
+
+&lt;p&gt;Costello: I mean the fellow’s name on first base.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Who.&lt;/p&gt;
+
+&lt;p&gt;Costello: The fellow playin’ first base.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Who.&lt;/p&gt;
+
+&lt;p&gt;Costello: The guy on first base.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Who is on first.&lt;/p&gt;
+
+&lt;p&gt;Costello: Well, what are you askin’ me for?&lt;/p&gt;
+
+&lt;p&gt;Abbott: I’m not asking you–I’m telling you. Who is on first.&lt;/p&gt;
+
+&lt;p&gt;Costello: I’m asking you–who’s on first?&lt;/p&gt;
+
+&lt;p&gt;Abbott: That’s the man’s name.&lt;/p&gt;
+
+&lt;p&gt;Costello: That’s who’s name?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Yes.&lt;/p&gt;
+
+&lt;p&gt;Costello: When you pay off the first baseman every month, who gets the money?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Every dollar of it. And why not, the man’s entitled to it.&lt;/p&gt;
+
+&lt;p&gt;Costello: Who is?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Yes.&lt;/p&gt;
+
+&lt;p&gt;Costello: So who gets it?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Why shouldn’t he? Sometimes his wife comes down and collects it.&lt;/p&gt;
+
+&lt;p&gt;Costello: Who’s wife?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Yes. After all, the man earns it.&lt;/p&gt;
+
+&lt;p&gt;Costello: Who does?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Absolutely.&lt;/p&gt;
+
+&lt;p&gt;Costello: Well, all I’m trying to find out is what’s the guy’s name on first base?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Oh, no, no. What is on second base.&lt;/p&gt;
+
+&lt;p&gt;Costello: I’m not asking you who’s on second.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Who’s on first!&lt;/p&gt;
+
+&lt;p&gt;Costello: St. Louis has a good outfield?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Oh, absolutely.&lt;/p&gt;
+
+&lt;p&gt;Costello: The left fielder’s name?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Why.&lt;/p&gt;
+
+&lt;p&gt;Costello: I don’t know, I just thought I’d ask.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Well, I just thought I’d tell you.&lt;/p&gt;
+
+&lt;p&gt;Costello: Then tell me who’s playing left field?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Who’s playing first.&lt;/p&gt;
+
+&lt;p&gt;Costello: Stay out of the infield! The left fielder’s name?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Why.&lt;/p&gt;
+
+&lt;p&gt;Costello: Because.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Oh, he’s center field.&lt;/p&gt;
+
+&lt;p&gt;Costello: Wait a minute. You got a pitcher on this team?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Wouldn’t this be a fine team without a pitcher?&lt;/p&gt;
+
+&lt;p&gt;Costello: Tell me the pitcher’s name.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Tomorrow.&lt;/p&gt;
+
+&lt;p&gt;Costello: Now, when the guy at bat bunts the ball–me being a good catcher–I want to throw the guy out at first base, so I pick up the ball and throw it to who?&lt;/p&gt;
+
+&lt;p&gt;Abbott: Now, that’s he first thing you’ve said right.&lt;/p&gt;
+
+&lt;p&gt;Costello: I DON’T EVEN KNOW WHAT I’M TALKING ABOUT!&lt;/p&gt;
+
+&lt;p&gt;Abbott: Don’t get excited. Take it easy.&lt;/p&gt;
+
+&lt;p&gt;Costello: I throw the ball to first base, whoever it is grabs the ball, so the guy runs to second. Who picks up the ball and throws it to what. What throws it to I don’t know. I don’t know throws it back to tomorrow–a triple play.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Yeah, it could be.&lt;/p&gt;
+
+&lt;p&gt;Costello: Another guy gets up and it’s a long ball to center.&lt;/p&gt;
+
+&lt;p&gt;Abbott: Because.&lt;/p&gt;
+
+&lt;p&gt;Costello: Why? I don’t know. And I don’t care.&lt;/p&gt;
+
+&lt;p&gt;Abbott: What was that?&lt;/p&gt;
+
+&lt;p&gt;Costello: I said, I DON’T CARE!&lt;/p&gt;
+
+&lt;p&gt;Abbott: Oh, that’s our shortstop!&lt;/p&gt;</content><author><name>leeic007</name></author><category term="Blog" /><summary type="html">Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.</summary></entry></feed>
