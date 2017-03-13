@@ -5,6 +5,9 @@ categories:
 tags:
   - EE
 ---
+
+![模拟电路](http://i1.piimg.com/567571/3a924f76674a0821.png)
+
 ## 主要内容：
 - [前言](#preparation)
 - [课程列表](#curriculum)
